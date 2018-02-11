@@ -21,7 +21,8 @@ namespace Btn.Engine.ComparatorExtensions
                 return false;
             }
 
-            return IsTreeEqualTo(firstTree.Left, secondTree.Left) && IsTreeEqualTo(firstTree.Right, secondTree.Right);
+            return IsTreeEqualTo(firstTree.Left, secondTree.Left) 
+                   && IsTreeEqualTo(firstTree.Right, secondTree.Right);
         }
     }
 }

@@ -98,7 +98,7 @@ namespace ElementCollection.UnitTests
         }
 
         [TestMethod]
-        public void Filter_No_Dublicate_Num_And_Age_Bigger_Than_20_Should_Fail()
+        public void Filter_No_Dublicate_Num_And_Age_Bigger_Than_20_Should_Pass()
         {
             var input = new Collection<Element>
             {
