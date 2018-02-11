@@ -15,6 +15,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementCollection.Infractur
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementCollection.Engine", "ElementCollection.Engine\ElementCollection.Engine.csproj", "{B6B39433-A103-4612-BCAB-EFCEC734694E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task1", "Task1", "{CD655BB2-2D07-48B9-9627-B6E2F3E5AB29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task2", "Task2", "{EBD9B87B-E869-40BD-8736-22F0864E9877}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Task3", "Task3", "{0A91996B-B2C9-4223-A97E-4B2260A5F432}"
+	ProjectSection(SolutionItems) = preProject
+		ClientsAndOrders.sql = ClientsAndOrders.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +57,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{572D9882-8B6A-49BC-A678-851FECF9AEBC} = {CD655BB2-2D07-48B9-9627-B6E2F3E5AB29}
+		{2ADD726B-A78C-45F2-9BDD-0F3D83FF4321} = {CD655BB2-2D07-48B9-9627-B6E2F3E5AB29}
+		{7149ACCF-5187-4A55-BFB1-15379EACDB6F} = {CD655BB2-2D07-48B9-9627-B6E2F3E5AB29}
+		{0C6054B4-E3A8-4902-A173-A754E30E0FB1} = {EBD9B87B-E869-40BD-8736-22F0864E9877}
+		{C5839D90-146D-4C9F-9401-E8DCF9488A03} = {EBD9B87B-E869-40BD-8736-22F0864E9877}
+		{B6B39433-A103-4612-BCAB-EFCEC734694E} = {EBD9B87B-E869-40BD-8736-22F0864E9877}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {545E815D-8551-4693-A40B-349BE26FF274}
