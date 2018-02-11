@@ -7,10 +7,10 @@ namespace Btn.UnitTests
     [TestClass]
     public class BtnTests
     {
-        #region Pass
+        #region Equals
 
         [TestMethod]
-        public void One_Of_Btn_Trees_Is_Null_Should_Pass()
+        public void One_Of_Btn_Trees_Is_Null()
         {
             var firstBtn = new BTN
             {
@@ -29,14 +29,14 @@ namespace Btn.UnitTests
         }
 
         [TestMethod]
-        public void Both_Of_Btn_Trees_Is_Null_Should_Pass()
+        public void Both_Of_Btn_Trees_Is_Null()
         {
             ((BTN)null).IsTreeEqualTo(null);
         }
 
         //http://lcm.csa.iisc.ernet.in/dsa/img151.gif
         [TestMethod]
-        public void Compare_Equal_BTN_Trees_Should_Pass()
+        public void Compare_Equal_BTN_Trees()
         {
             var firstBtn = new BTN
             {
@@ -117,7 +117,7 @@ namespace Btn.UnitTests
 
         //https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/2000px-Binary_search_tree.svg.png
         [TestMethod]
-        public void Compare_Equal_BTN_Trees_Should_Pass_1()
+        public void Compare_Equal_BTN_Trees_1()
         {
             var firstBtn = new BTN
             {
@@ -199,10 +199,10 @@ namespace Btn.UnitTests
         #endregion
 
 
-        #region Fail
+        #region Not_Equals
 
         [TestMethod]
-        public void The_Second_Tree_Do_Not_Have_Right_Compared_To_The_First_Should_Fail()
+        public void The_Second_Tree_Do_Not_Have_Right_Compared_To_The_First_Not_Equals()
         {
             var firstBtn = new BTN
             {
@@ -254,11 +254,11 @@ namespace Btn.UnitTests
                 }
             };
 
-            Assert.IsTrue(firstBtn.IsTreeEqualTo(secondBtn));
+            Assert.IsFalse(firstBtn.IsTreeEqualTo(secondBtn));
         }
 
         [TestMethod]
-        public void The_Second_Tree_Have_Different_Elements_In_The_Right_Compared_To_The_First_Should_Fail()
+        public void The_Second_Tree_Have_Different_Elements_In_The_Right_Compared_To_The_First_Not_Equals()
         {
             var firstBtn = new BTN
             {
@@ -318,7 +318,7 @@ namespace Btn.UnitTests
                 }
             };
 
-            Assert.IsTrue(firstBtn.IsTreeEqualTo(secondBtn));
+            Assert.IsFalse(firstBtn.IsTreeEqualTo(secondBtn));
         }
 
         #endregion

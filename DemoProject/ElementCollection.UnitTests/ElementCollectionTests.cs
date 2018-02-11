@@ -10,17 +10,17 @@ namespace ElementCollection.UnitTests
     public class ElementCollectionTests
     {
 
-        #region Pass
+        #region Equals
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentNullException))]
-        public void Null_Exception_Should_Pass()
+        public void Null_Exception()
         {
             ((Collection<Element>)null).FilterUniqueNumAndAgeBiggerThan20();
         }
 
         [TestMethod]
-        public void Filter_Duplicate_Num_And_Age_Bigger_Than_20_Should_Pass()
+        public void Filter_Duplicate_Num_And_Age_Bigger_Than_20()
         {
             var input = new Collection<Element>
             {
@@ -66,7 +66,7 @@ namespace ElementCollection.UnitTests
         }
 
         [TestMethod]
-        public void Filter_Duplicate_Num_And_Age_Less_Than_20_Should_Pass()
+        public void Filter_Duplicate_Num_And_Age_Less_Than_20()
         {
             var input = new Collection<Element>
             {
@@ -98,7 +98,7 @@ namespace ElementCollection.UnitTests
         }
 
         [TestMethod]
-        public void Filter_No_Duplicate_Num_And_Age_Bigger_Than_20_Should_Pass()
+        public void Filter_No_Duplicate_Num_And_Age_Bigger_Than_20()
         {
             var input = new Collection<Element>
             {
@@ -151,10 +151,10 @@ namespace ElementCollection.UnitTests
 
         #endregion
 
-        #region Fail
+        #region Not_Equals
 
         [TestMethod]
-        public void Filter_Duplicate_Num_And_Age_Bigger_Than_20_Should_Fail()
+        public void Filter_Duplicate_Num_And_Age_Bigger_Than_20_Not_Equals()
         {
             var input = new Collection<Element>
             {
@@ -196,11 +196,11 @@ namespace ElementCollection.UnitTests
 
             var result = input.FilterUniqueNumAndAgeBiggerThan20();
 
-            CollectionAssert.AreEqual(expectedResult, result);
+            CollectionAssert.AreNotEqual(expectedResult, result);
         }
 
         [TestMethod]
-        public void Filter_Duplicate_Num_And_Age_Less_Than_20_Should_Fail()
+        public void Filter_Duplicate_Num_And_Age_Less_Than_20_Not_Equals()
         {
             var input = new Collection<Element>
             {
@@ -237,7 +237,7 @@ namespace ElementCollection.UnitTests
 
             var result = input.FilterUniqueNumAndAgeBiggerThan20();
 
-            CollectionAssert.AreEqual(expectedResult, result);
+            CollectionAssert.AreNotEqual(expectedResult, result);
         }
 
         #endregion
