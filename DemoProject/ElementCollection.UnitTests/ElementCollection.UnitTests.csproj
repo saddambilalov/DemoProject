@@ -55,6 +55,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ElementCollection.Engine\ElementCollection.Engine.csproj">
+      <Project>{B6B39433-A103-4612-BCAB-EFCEC734694E}</Project>
+      <Name>ElementCollection.Engine</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ElementCollection.Infracture\ElementCollection.Infracture.csproj">
       <Project>{C5839D90-146D-4C9F-9401-E8DCF9488A03}</Project>
       <Name>ElementCollection.Infracture</Name>

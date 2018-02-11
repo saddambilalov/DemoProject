@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.ObjectModel;
+using ElementCollection.Engine.FilterExtensions;
 using ElementCollection.Infracture.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -15,7 +16,7 @@ namespace ElementCollection.UnitTests
         [ExpectedException(typeof(ArgumentNullException))]
         public void Null_Exception_Should_Pass()
         {
-            ((Collection<Element>)null).FilterUniqueAndAgeBiggerThan20();
+            ((Collection<Element>)null).FilterUniqueNumAndAgeBiggerThan20();
         }
 
         [TestMethod]
@@ -59,7 +60,7 @@ namespace ElementCollection.UnitTests
                 }
             };
 
-            var result = input.FilterUniqueAndAgeBiggerThan20();
+            var result = input.FilterUniqueNumAndAgeBiggerThan20();
 
             CollectionAssert.AreEqual(expectedResult, result);
         }
@@ -91,7 +92,7 @@ namespace ElementCollection.UnitTests
 
             var expectedResult = new Collection<Element>();
 
-            var result = input.FilterUniqueAndAgeBiggerThan20();
+            var result = input.FilterUniqueNumAndAgeBiggerThan20();
 
             CollectionAssert.AreEqual(expectedResult, result);
         }
@@ -143,7 +144,7 @@ namespace ElementCollection.UnitTests
                 }
             }; ;
 
-            var result = input.FilterUniqueAndAgeBiggerThan20();
+            var result = input.FilterUniqueNumAndAgeBiggerThan20();
 
             CollectionAssert.AreEqual(expectedResult, result);
         }
@@ -193,7 +194,7 @@ namespace ElementCollection.UnitTests
                 }
             };
 
-            var result = input.FilterUniqueAndAgeBiggerThan20();
+            var result = input.FilterUniqueNumAndAgeBiggerThan20();
 
             CollectionAssert.AreEqual(expectedResult, result);
         }
@@ -234,7 +235,7 @@ namespace ElementCollection.UnitTests
 
             };
 
-            var result = input.FilterUniqueAndAgeBiggerThan20();
+            var result = input.FilterUniqueNumAndAgeBiggerThan20();
 
             CollectionAssert.AreEqual(expectedResult, result);
         }

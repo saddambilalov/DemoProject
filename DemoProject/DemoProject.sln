@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementCollection.UnitTests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementCollection.Infracture", "ElementCollection.Infracture\ElementCollection.Infracture.csproj", "{C5839D90-146D-4C9F-9401-E8DCF9488A03}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementCollection.Engine", "ElementCollection.Engine\ElementCollection.Engine.csproj", "{B6B39433-A103-4612-BCAB-EFCEC734694E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C5839D90-146D-4C9F-9401-E8DCF9488A03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5839D90-146D-4C9F-9401-E8DCF9488A03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5839D90-146D-4C9F-9401-E8DCF9488A03}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6B39433-A103-4612-BCAB-EFCEC734694E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6B39433-A103-4612-BCAB-EFCEC734694E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6B39433-A103-4612-BCAB-EFCEC734694E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6B39433-A103-4612-BCAB-EFCEC734694E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
