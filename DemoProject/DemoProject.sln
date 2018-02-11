@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Btn.UnitTests", "Btn.UnitTests\Btn.UnitTests.csproj", "{572D9882-8B6A-49BC-A678-851FECF9AEBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Btn.Infracture", "Btn.Infracture\Btn.Infracture.csproj", "{2ADD726B-A78C-45F2-9BDD-0F3D83FF4321}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{572D9882-8B6A-49BC-A678-851FECF9AEBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{572D9882-8B6A-49BC-A678-851FECF9AEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{572D9882-8B6A-49BC-A678-851FECF9AEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{572D9882-8B6A-49BC-A678-851FECF9AEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2ADD726B-A78C-45F2-9BDD-0F3D83FF4321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2ADD726B-A78C-45F2-9BDD-0F3D83FF4321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2ADD726B-A78C-45F2-9BDD-0F3D83FF4321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2ADD726B-A78C-45F2-9BDD-0F3D83FF4321}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
