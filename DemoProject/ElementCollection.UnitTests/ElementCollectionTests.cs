@@ -20,7 +20,7 @@ namespace ElementCollection.UnitTests
         }
 
         [TestMethod]
-        public void Filter_Dublicate_Num_And_Age_Bigger_Than_20_Should_Pass()
+        public void Filter_Duplicate_Num_And_Age_Bigger_Than_20_Should_Pass()
         {
             var input = new Collection<Element>
             {
@@ -66,7 +66,7 @@ namespace ElementCollection.UnitTests
         }
 
         [TestMethod]
-        public void Filter_Dublicate_Num_And_Age_Less_Than_20_Should_Pass()
+        public void Filter_Duplicate_Num_And_Age_Less_Than_20_Should_Pass()
         {
             var input = new Collection<Element>
             {
@@ -98,7 +98,7 @@ namespace ElementCollection.UnitTests
         }
 
         [TestMethod]
-        public void Filter_No_Dublicate_Num_And_Age_Bigger_Than_20_Should_Pass()
+        public void Filter_No_Duplicate_Num_And_Age_Bigger_Than_20_Should_Pass()
         {
             var input = new Collection<Element>
             {
@@ -154,7 +154,7 @@ namespace ElementCollection.UnitTests
         #region Fail
 
         [TestMethod]
-        public void Filter_Dublicate_Num_And_Age_Bigger_Than_20_Should_Fail()
+        public void Filter_Duplicate_Num_And_Age_Bigger_Than_20_Should_Fail()
         {
             var input = new Collection<Element>
             {
@@ -200,7 +200,7 @@ namespace ElementCollection.UnitTests
         }
 
         [TestMethod]
-        public void Filter_Dublicate_Num_And_Age_Less_Than_20_Should_Fail()
+        public void Filter_Duplicate_Num_And_Age_Less_Than_20_Should_Fail()
         {
             var input = new Collection<Element>
             {
