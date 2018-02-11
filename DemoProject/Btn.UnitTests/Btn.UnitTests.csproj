@@ -55,6 +55,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Btn.Engine\Btn.Engine.csproj">
+      <Project>{7149ACCF-5187-4A55-BFB1-15379EACDB6F}</Project>
+      <Name>Btn.Engine</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Btn.Infracture\Btn.Infracture.csproj">
       <Project>{2ADD726B-A78C-45F2-9BDD-0F3D83FF4321}</Project>
       <Name>Btn.Infracture</Name>

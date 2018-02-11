@@ -1,4 +1,5 @@
-﻿using Btn.Infracture.Models;
+﻿using Btn.Engine.ComparatorExtensions;
+using Btn.Infracture.Models;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Btn.UnitTests
